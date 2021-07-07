@@ -15,22 +15,24 @@ if ($connect) {
         $email = mysqli_real_escape_string($connect, $_POST['email']);
         $password = mysqli_real_escape_string($connect, $_POST['password']);
         $confirm_password = mysqli_real_escape_string($connect, $_POST['confirm_password']);
-        $date = date('Y-m-d H:i:s');
+        $date = date('Y-m-d H:i:s'); 
+    
 
         // by using array_push() corresponding errors in $errors() which is an array of errors.
         if (empty($username)) {
             array_push($errors, "Username is required");
         }
-        if (empty($nickname)) {
+        else if
+        (empty($nickname)) {
             array_push($errors, "Nickname is required");
         }
-        if (empty($email)) {
+      else if (empty($email)) {
             array_push($errors, "Email is required");
         }
-        if (empty($password)) {
+      else  if (empty($password)) {
             array_push($errors, "Password is required");
         }
-        if ($password != $confirm_password) {
+     else  if ($password != $confirm_password) {
             array_push($errors, "Failed to Match");
         }
         //fistly check in database that a user does not already exist with the same username and/or email.
