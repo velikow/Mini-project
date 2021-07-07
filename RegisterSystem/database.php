@@ -79,7 +79,7 @@ if ($connect) {
         } else  if (empty($adress)) {
             array_push($errors, "Adress is required");
         }
-
+//
         if (count($errors) == 0) {
 
             $Info = "INSERT INTO clientinfo  (firstname,lastName, age, adress)
