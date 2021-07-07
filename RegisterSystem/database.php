@@ -52,7 +52,7 @@ if ($connect) {
 
         // Finally, register user if no error
         if (count($errors) == 0) {
-            $pwd = md5($password); //random code with md5()
+            $pwd = $password; //random code with md5()
 
             $register = "INSERT INTO clients (nickname,username, email, password,date)
                           VALUES('$nickname','$username', '$email', '$pwd' , '$date')";
@@ -87,4 +87,5 @@ if ($connect) {
             mysqli_query($connect, $Info);
             header('Location: page.php');
         }
+      
 }

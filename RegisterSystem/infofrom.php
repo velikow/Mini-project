@@ -39,7 +39,7 @@ include('database.php') ?>
                     </div>
                     <div>
                               Already have an account?
-                              <a class="right" href="page.php">Login</a>
+                              <a class="right" href="loginpage.php">Login</a>
                     </div>
           </form>
 </body>

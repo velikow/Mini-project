@@ -22,7 +22,7 @@ include('database.php') ?>
                     </div>
                     <div class="input-group">
                               <label>Nickname</label>
-                              <input type="text" name="Nickname" placeholder="Nick Name" required="required">
+                              <input type="text" name="nickname" placeholder="Nick Name" required="required">
                     </div>
                     <div class="input-group">
                               <label>Email</label>
@@ -45,7 +45,7 @@ include('database.php') ?>
                     </div>
                     <div>
                               Already have an account?
-                              <a class="right" href="page.php">Login</a>
+                              <a class="right" href="loginpage.php">Login</a>
                     </div>
           </form>
 </body>
