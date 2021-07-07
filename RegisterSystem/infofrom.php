@@ -16,7 +16,7 @@ include('database.php') ?>
 
           <form method="post" action="infofrom.php">
                     <?php include('error.php'); ?>
-                    <h3>Please write your details in English.</h3>
+                    
                     <div class="input-group">
                               <label>Fistname</label>
                               <input type="text" name="firstName" placeholder="Your FirstName" required="required">
